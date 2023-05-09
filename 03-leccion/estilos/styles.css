@@ -1,0 +1,25 @@
+h1{
+    color: #f07167;
+
+}
+/*Color del vínculo antes de hacer click en ellos */
+a:link{
+   color: #fb8500;
+   text-decoration: none;
+}
+/*Color del vinculo despues de hacer click en ellos*/
+a:visited{
+    color:#219ebc;
+    text-decoration: none;
+}
+
+/*Cuando nos ponemos encima del link*/
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+/*Cuando damos click en el link */
+a:active{
+    color: #023047;
+    text-decoration: underline;
+}

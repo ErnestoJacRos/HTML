@@ -1,0 +1,33 @@
+pag de colores:
+
+https://htmlcolorcodes.com/color-names/
+
+Generador de paletas de colores
+
+https://coolors.co/ 
+
+
+para fondos 
+
+https://uigradients.com/#Html
+
+
+AI para nombres 
+https://namelix.com/
+
+para host
+https://www.hostinger.mx/
+
+pag para icones
+https://icons.getbootstrap.com/
+
+pag iconos
+https://ionic.io/ionicons/
+
+pag para generar sombras:
+
+https://html-css-js.com/css/generator/text-shadow/
+https://cssgenerator.org/
+
+iconos google
+https://fonts.google.com/icons

@@ -1,0 +1,26 @@
+/*se aplica a todos los elementos*/
+
+/*Identificador de elemento único*/
+#titulo_principal{
+    color: #f72585;
+    text-align: center;
+    margin: 10px;
+}
+h2{
+    color: #3f37c9;
+}
+p{
+    color: #457b9d;
+}
+/*con le punto estamos creadon una Clasa
+    Se puede apliclas a varias elementos*/
+.tarjeta{
+    border: 10px solid #560bad;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 10px 115px;
+    padding: 15px;
+}
+.titulo{
+    color: #f72585;
+}

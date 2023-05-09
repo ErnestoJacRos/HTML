@@ -1,0 +1,18 @@
+ol{
+   list-style: none;
+   counter-reset: contador;/*reinicia el contador cada vez que se utilice
+   un lista ordenada*/
+}
+ol li{
+    /*incrementa el contador con cada item de la lista*/
+    counter-increment: contador;
+}
+ol li::before{
+    /*con content se va a visualizar el contador*/
+    content: 'Curso ' counter(contador) ") ";
+    color: orange;
+
+}
+ol li::after{
+    content: '.';
+}

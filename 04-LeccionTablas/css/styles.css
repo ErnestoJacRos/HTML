@@ -1,0 +1,27 @@
+table{
+    width: 100%;
+}
+table, th, td{
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+caption{
+    color: #e63946;
+    font-size: 45px;
+    font-family: 'Trocchi', serif;
+    line-height: 70px;
+}
+th{
+    color: #f1faee;
+    background-color: #1d3557;
+}
+/*even para pares
+  odd para impares*/
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+tr:nth-child(odd){
+    background-color:#a8dadc;
+}

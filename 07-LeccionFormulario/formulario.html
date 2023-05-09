@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/STYLE.CSS">
+</head>
+
+<body>
+    <h1>Fórmulario en HTML</h1>
+    <!--si queremos validar un campo usamos el atributo de [required]
+    pero si no queremos que que ningun campo se valide usamos el 
+atributo [novalidate] en la tag [form]-->
+    <form action="mi_servidor" method="get" target="_blank" autocomplete="off"><!--"action es para especificar la url del servidr"-->
+        <!--"target" es para recibir la respuesta del servidor donde "_self" para recibirla en la 
+        misma página y "_blank" para recibir la respuesta en una pág. nueva. por defecto
+        está en "_self"-->
+        <!--usamos "autocomplete" en "off" para no usar las sugerencia que con anterioridad hemos usado
+        por defecto está en on-->
+        
+        <fieldset><!--para agregar un marco al formulario -->
+            
+            <legend>Datos Persona </legend><!--para agregar un título-->
+            <!--con "method" get o post, con get la info del formulario y es visible en el url  
+            se va por el url y con post la info se va en el cuerpo de la página y no se ve-->
+
+            <label for="idPersona">Id Persona:</label><br>
+            <input type="text" id="idPersona" name="idPersona" readonly="true"
+            value="100" disabled="true"><br><!--"readonly" con valor "true" solo será un campo  de lectura
+            en el valor que tenemos en "value" es el que se enviará al servidor
+            "disabled" para que el campo este deshabilitado, pero, si lo hacemos el valor que hemos
+            puesto ya no se enviará al servidor-->
+            
+            <!--con "hidden" es para enviar datos ocultos al servidor-->
+            <input type="hidden" name="sistema" id="sistema" value="SAP">
+
+
+            <label for="nombre">Nombre:</label><br>
+            <!--"placeholder" para tener un texto sugerente dentro dle input-->
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"><br>
+            <!--"value" es el valor que enviara al servidor-->
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true"><br>
+            <!--el "for" de la tag "label" se relaciona con "id" del input-->    
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required="true" placeholder="Escriba your Email"><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad" required="true" placeholder="Escriba su edad" step="any"><br>
+
+            <label>Género</label><br>
+            <input type="radio" name="genero" id="femenino" value="femenino">
+            <label for="femenino">Femenino</label><br>
+            <!--en "name" debe ser el mismo nombre para que solo se pueda selecciona un radiobuttom-->
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <label> Género Música Favorita </label><br>
+            <input type="checkbox" name="musica" id="clasica" value="clasica">
+            <label for="clasica">Clásica</label><br>
+            <!--el "name" es el mismo pero porque va a recibir varios valores, va ser como un arreglo-->
+            <input type="checkbox" name="musica" id="rock" value="rock">
+            <label for="rock">Rock</label><br>
+
+            <input type="checkbox" name="musica" id="pop" value="pop">
+            <label for="pop">Pop
+            </label><br>
+
+            <label for="autos">Marca auto favorita:</label><br>
+            <select name="autos" id="autos" multiple="true"><!--multiple para selecionar varios-->
+                <option value="volvo">Volvo</option>
+                <option value="bmw" selected="true">BMW</option><!---selected para que sea la opcion predeterminada-->
+                <option value="audi">Audi</option>
+            </select><br>
+
+            <label for="comentario">Comentario</label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"
+            placeholder="Escribe un comentario"></textarea><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required="true"><br>
+
+            <input type="submit" value="Enviar"><br>
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">
+            <input type="reset" value="Restablecer"><!--"reset" lo usamos para limpiar el formulario -->
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
